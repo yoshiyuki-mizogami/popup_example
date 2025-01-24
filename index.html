@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap :5rem;
+    margin-top: 3rem;
+  }
+  div{
+    margin: auto;
+    padding:1rem;
+    border-radius: 1rem;
+    border: solid 1px gray;
+    display:inline-block;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div onclick="window.open('https://google.co.jp','google1', 'width=500,height=500')">
+    クリックして開くポップアップ(ブロックされない)
+  </div>
+  <div onmouseenter="window.open('https://google.co.jp','google2', 'width=500,height=500')">
+    クリック関係なくカーソルが重なったときに開こうとするポップアップ(ブロック対象)
+  </div>
+</body>
+</html>
